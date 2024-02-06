@@ -1,14 +1,14 @@
 #!/bin/sh # Define the observed data files
-OBSERVED_Z="/Users/ahasan/Documents/seismology_software/PROJECTFFT/OBSDIR/Noisy_Convolved_OBS_Z.sac"
-OBSERVED_R="/Users/ahasan/Documents/seismology_software/PROJECTFFT/OBSDIR/Noisy_Convolved_OBS_R.sac"
+OBSERVED_Z="/Users/ahasan/Documents/seismology_software/PROJECTFFT7/OBSDIR/Noisy_Convolved_OBS_Z.sac"
+OBSERVED_R="/Users/ahasan/Documents/seismology_software/PROJECTFFT7/OBSDIR/Noisy_Convolved_OBS_R.sac"
 
-SYNTHETICS_DIR="/Users/ahasan/Documents/seismology_software/PROJECTFFT/SYNDIR"
+SYNTHETICS_DIR="/Users/ahasan/Documents/seismology_software/PROJECTFFT7/SYNDIR"
 
-MODELS_DIR="/Users/ahasan/Documents/seismology_software/PROJECTFFT/MODELSDIR"
+MODELS_DIR="/Users/ahasan/Documents/seismology_software/PROJECTFFT7/MODELSDIR"
 
-BEST_SYNTHETICS_DIR="/Users/ahasan/Documents/seismology_software/PROJECTFFT/BEST_SYNDIR"
+BEST_SYNTHETICS_DIR="/Users/ahasan/Documents/seismology_software/PROJECTFFT7/BEST_SYNDIR"
 
-MISFIT_CSV="/Users/ahasan/Documents/seismology_software/PROJECTFFT/misfits.csv"
+MISFIT_CSV="/Users/ahasan/Documents/seismology_software/PROJECTFFT7/misfits.csv"
 
 echo "Iteration,Misfit" > $MISFIT_CSV
 
