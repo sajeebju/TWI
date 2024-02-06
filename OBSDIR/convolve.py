@@ -22,16 +22,14 @@ def main():
 
     z_sac_file, r_sac_file = sys.argv[1], sys.argv[2]
 
-    # Parameters for the damped harmonic oscillator function
     duration = 5
-    dt = 0.05  # Sampling interval
-    omega = 2 * np.pi * 1  # Angular frequency, e.g., 1 Hz
-    gamma = 4   # Damping coefficient
-    psi = 4     # Phase shift
+    dt = 0.05 
+    omega = 2 * np.pi * 1  
+    gamma = 4 
+    psi = 4 
 
     dho_func = create_damped_oscillator_function(duration, dt, omega, gamma, psi)
 
-    # Convolve and save the results
     z_convolved = convolve_with_function(z_sac_file, dho_func)
     z_convolved.write("Convolved_OBS_Z.sac", format='SAC')
 

@@ -21,13 +21,11 @@ def main():
         sys.exit(1)
 
     z_sac_file, r_sac_file = sys.argv[1], sys.argv[2]
-
-    # Parameters for Gaussian noise
     noise_mean = 0.00
-    noise_std_dev = 0.01  # Adjust this as needed
-    num_samples = 2048   # Number of samples in Gaussian noise
+    noise_std_dev = 0.01 
+    num_samples = 2048
 
-    # Process Z and R SAC files
+
     z_noisy = process_sac_file(z_sac_file, noise_mean, noise_std_dev, num_samples)
     z_noisy.write("Noisy_" + z_sac_file.split('/')[-1], format='SAC')
 
