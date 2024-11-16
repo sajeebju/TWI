@@ -2,7 +2,7 @@
 Here only added the 7 layer and half space test 
 We used Central US Model CUS.mod -> SCM.mod to generate synthetic earth response using the scripts
 
-#!/bin/sh "\n"
+#!/bin/sh
 MODEL_FILE="/Users/ahasan/Documents/seismology_software/PROJECTFFT/OBSDIR/SCM.mod"
 hrftn96 -M "$MODEL_FILE" -RAYP 0.07 -DT 0.05 -NPTS 2048 -P -z
 mv hrftn96.sac "OBS_Z.sac"
